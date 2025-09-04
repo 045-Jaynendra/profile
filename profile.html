@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #f8fafc;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 40px;
+      width: 360px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .profile-pic {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 18px;
+      border: 4px solid #38bdf8;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+      transition: box-shadow 0.5s ease;
+    }
+
+    .card:hover .profile-pic {
+      box-shadow: 0 0 30px rgba(56, 189, 248, 0.9);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      font-weight: 600;
+      color: #f1f5f9;
+    }
+
+    .info {
+      margin-top: 14px;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .info a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .info a:hover {
+      color: #0ea5e9;
+    }
+
+    .instagram a {
+      color: #f472b6;
+    }
+
+    .instagram a:hover {
+      color: #db2777;
+    }
+
+    .domain {
+      margin-top: 24px;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+
+    .domain span {
+      font-weight: 600;
+      color: #38bdf8;
+    }
+
+    /* Small glowing animation */
+    @keyframes pulse {
+      0% { box-shadow: 0 0 15px rgba(56,189,248,0.5); }
+      50% { box-shadow: 0 0 25px rgba(56,189,248,0.9); }
+      100% { box-shadow: 0 0 15px rgba(56,189,248,0.5); }
+    }
+
+    .glow {
+      animation: pulse 3s infinite;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://github.com/045-Jaynendra/myrepository/blob/main/IMG-20241230-WA0045.jpg?raw=true" alt="Profile Picture" class="profile-pic glow">
+    <h1>Jaynendra Sharma</h1>
+    
+    <div class="info">
+      <span>📧</span>
+      <a href="mailto:jay.sh2807@gmail.com">jay.sh2807@gmail.com</a>
+    </div>
+
+    <div class="info instagram">
+      <span>📷</span>
+      <a href="https://www.instagram.com/jay._.sh/" target="_blank">@jay._.sh</a>
+    </div>
+
+    <p class="domain">Owner of <span>growai.co.in</span></p>
+  </div>
+</body>
+</html>
